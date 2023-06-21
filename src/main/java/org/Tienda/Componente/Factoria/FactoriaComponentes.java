@@ -10,7 +10,7 @@ public class FactoriaComponentes implements IComponenteFactory {
 
     @Override
     public IComponenteIdentificable dameComponente(TipoComponente tipo, String num_Serie, double precio, double grados, double cores, double Almacenamiento) {
-        ICoreable Cores = null;
+        ICoreable Cores;
         if (cores  == 0) {
             Cores = new SinCores();
         }
@@ -22,7 +22,7 @@ public class FactoriaComponentes implements IComponenteFactory {
             }
         }
 
-        IMegable Almacen = null;
+        IMegable Almacen;
         if (Almacenamiento == 0)
         {
             Almacen = new SinMegas();

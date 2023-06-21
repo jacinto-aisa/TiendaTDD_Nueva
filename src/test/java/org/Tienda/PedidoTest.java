@@ -41,7 +41,7 @@ public class PedidoTest {
         PedidoPrueba = new Pedido();
         PedidoPrueba.add(OrdenadorDeMaria);
         PedidoPrueba.add(OrdenadorDePruebas);
-    };
+    }
 
     @Test
     @DisplayName("Fabricacion Correcta de Pedidos")

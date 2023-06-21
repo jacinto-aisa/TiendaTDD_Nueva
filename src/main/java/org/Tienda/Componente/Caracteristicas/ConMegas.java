@@ -1,7 +1,7 @@
 package org.Tienda.Componente.Caracteristicas;
 
 public class ConMegas implements IMegable {
-    private double almacenamiento;
+    private final double almacenamiento;
 
     public ConMegas(double almacenamiento) {
         this.almacenamiento = almacenamiento;

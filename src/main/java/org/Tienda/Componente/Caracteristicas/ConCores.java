@@ -1,7 +1,7 @@
 package org.Tienda.Componente.Caracteristicas;
 
 public class ConCores implements ICoreable {
-    private double cores;
+    private final double cores;
 
     public ConCores(double cores) {
         this.cores = cores;
@@ -9,6 +9,6 @@ public class ConCores implements ICoreable {
 
     @Override
     public double dameCores() {
-        return 0;
+        return cores;
     }
 }

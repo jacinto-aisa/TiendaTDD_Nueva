@@ -5,12 +5,10 @@ import org.Tienda.Componente.ICosteYGrados;
 import org.Tienda.Componente.TipoComponente;
 
 import java.util.HashMap;
-import java.util.Map;
-import java.util.function.Function;
-import java.util.stream.Collectors;
+
 
 public class Ordenador implements ICosteYGrados {
-    private HashMap<String, IComponenteIdentificable> piezas;
+    private final HashMap<String, IComponenteIdentificable> piezas;
     boolean procesadorExiste;
     boolean memoriaExiste;
     boolean almacenamientoExiste;
@@ -69,10 +67,10 @@ public class Ordenador implements ICosteYGrados {
     @Override
     public String toString() {
         String cadena = "Ordenador: \n";
-        String cadenaComponentes = "";
+        StringBuilder cadenaComponentes = new StringBuilder();
         for(IComponenteIdentificable elemento : piezas.values())
         {
-            cadenaComponentes+=elemento.toString()+"\n";
+            cadenaComponentes.append(elemento.toString()).append("\n");
         }
         return cadena + cadenaComponentes;
     }

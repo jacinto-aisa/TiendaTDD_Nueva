@@ -4,12 +4,12 @@ import org.Tienda.Componente.Caracteristicas.ICoreable;
 import org.Tienda.Componente.Caracteristicas.IMegable;
 
 public class Componente implements IComponenteIdentificable {
-    private TipoComponente tipo;
-    private String num_Serie;
-    private double precio;
-    private double grados;
-    public ICoreable Cores;
-    public IMegable Almacenamiento;
+    private final TipoComponente tipo;
+    private final String num_Serie;
+    private final double precio;
+    private final double grados;
+    public final ICoreable Cores;
+    public final IMegable Almacenamiento;
 
     public Componente(TipoComponente tipo, String num_Serie, double precio, double grados, ICoreable cores, IMegable almacenamiento) {
         this.tipo = tipo;

@@ -1,6 +1,6 @@
 package org.Tienda.Componente.Validadores;
 
-import org.Tienda.Componente.IComponenteIdentificable;
+
 import org.Tienda.Componente.TipoComponente;
 import org.Tienda.Ordenador.Ordenador;
 
